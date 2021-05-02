@@ -125,7 +125,7 @@ class PyFootball:
 
         # Generate JSON (dict)
         match  = PyFootball.row_to_dict('match', [row['match_id'], row['match_name'], home_team, away_team, home_score, away_score])
-        team   = PyFootball.row_to_dict('team', [home_team, away_team])
+        team   = PyFootball.row_to_dict('team', [row['team_id'], row['team_name']])
         player = PyFootball.row_to_dict('player', [row['player_id'], row['team_id'], row['player_name']])
         stat   = PyFootball.row_to_dict('stat', [stat_id, row['player_id'], row['match_id'], row['goals_scored'], row['minutes_played'], fraction_of_total_minutes_played, fraction_of_total_goals_scored])
 
