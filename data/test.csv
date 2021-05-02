@@ -1,0 +1,21 @@
+match_id,match_name,team_id,team_name,is_home,player_id,player_name,goals_scored,minutes_played
+10,Padova vs Verona,12,Padova,True,3,Luca Scarpa,0,30
+10,Padova vs Verona,12,Padova,True,22,Andrea Zane,10,20
+10,Padova vs Verona,12,Padova,True,2,Alessandro Del Piero,0,20
+10,Padova vs Verona,12,Padova,True,4,Giovanni Gattuso,4,10
+10,Padova vs Verona,12,Padova,True,12,Giovanni Rossi,1,72
+10,Padova vs Verona,14,Verona,False,1,Giovanni Rossi,4,38
+10,Padova vs Verona,14,Verona,False,10,Riccardo Verdi,1,5
+10,Padova vs Verona,14,Verona,False,21,Stefano Spugna,4,5
+10,Padova vs Verona,14,Verona,False,19,Paolo Paolino,0,30
+10,Padova vs Verona,14,Verona,False,40,Luca Rossignoli,7,40
+1,Cittadella vs Padova,12,Padova,False,3,Luca Scarpa,1,30
+1,Cittadella vs Padova,12,Padova,False,22,Andrea Zane,2,20
+1,Cittadella vs Padova,12,Padova,False,2,Alessandro Del Piero,4,20
+1,Cittadella vs Padova,12,Padova,False,4,Giovanni Gattuso,0,10
+1,Cittadella vs Padova,12,Padova,False,12,Giovanni Rossi,0,72
+1,Cittadella vs Padova,3,Cittadella,True,61,Giulio Darai,10,75
+1,Cittadella vs Padova,3,Cittadella,True,74,Federico Sabbioni,0,20
+1,Cittadella vs Padova,3,Cittadella,True,65,Marco Terranegra,4,20
+1,Cittadella vs Padova,3,Cittadella,True,101,Alberto Gattuso,0,10
+1,Cittadella vs Padova,3,Cittadella,True,97,Antonio Pisani,1,72
