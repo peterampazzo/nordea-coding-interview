@@ -70,37 +70,17 @@ class PyFootball:
         '''
 
         if output == 'match':
-            return {
-                'match_id':     data[0],
-                'match_name':   data[1],
-                'home_team_id': data[2],
-                'away_team_id': data[3],
-                'home_goals':   data[4],
-                'away_goals':   data[5]
-            }
+            keys = ['match_id', 'match_name', 'home_team_id', 'away_team_id', 'home_goals', 'away_goals']
         elif output == 'team':
-            return {
-                'team_id':      data[0],
-                'team_name':    data[1]
-            }
+            keys = ['team_id', 'team_name']
         elif output == 'player':
-            return {
-                'player_id':    data[0],
-                'team_id':      data[1],
-                'player_name':  data[2]
-            }
+            keys = ['player_id', 'team_id', 'player_name']
         elif output == 'stat':
-            return {
-                'stat_id':                          data[0],
-                'player_id':                        data[1],
-                'match_id':                         data[2],
-                'goal_scored':                      data[3],
-                'minutes_played':                   data[4],
-                'fraction_of_total_minutes_played': data[5],
-                'fraction_of_total_goals_scored':   data[6]
-            }
+            keys = ['stat_id', 'player_id', 'match_id', 'goal_scored', 'minutes_played', 'fraction_of_total_minutes_played', 'fraction_of_total_goals_scored']
         else:
             return {}
+        
+        return dict(zip(keys, data))
 
     @staticmethod
     def parse_row(df: 'pandas.core.frame.DataFrame', row: list) -> (dict, dict, dict, dict):
